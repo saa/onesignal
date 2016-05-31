@@ -4,7 +4,7 @@
 -export([create_player/1, create_player/2]).
 -export([send_notification/2]).
 
--define(API_BASE, <<"https://onesignal.com/api/v1">>).
+-define(API_BASE, <<"http://onesignal.com/api/v1">>).
 
 %%====================================================================
 %% API functions
