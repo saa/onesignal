@@ -1,13 +1,13 @@
 [{<<"certifi">>,{pkg,<<"certifi">>,<<"0.4.0">>},1},
  {<<"hackney">>,
   {git,"https://github.com/benoitc/hackney.git",
-       {ref,"f1fd03d7d5997d50146739fe45d9ca245cf0d399"}},
+       {ref,"66a53291d3fef4f46f7baa99016725c7659aa022"}},
   0},
- {<<"idna">>,{pkg,<<"idna">>,<<"1.1.0">>},1},
+ {<<"idna">>,{pkg,<<"idna">>,<<"1.2.0">>},1},
  {<<"jsx">>,
   {git,"https://github.com/talentdeficit/jsx.git",
        {ref,"3074d4865b3385a050badf7828ad31490d860df5"}},
   0},
  {<<"metrics">>,{pkg,<<"metrics">>,<<"1.0.1">>},1},
  {<<"mimerl">>,{pkg,<<"mimerl">>,<<"1.0.2">>},1},
- {<<"ssl_verify_hostname">>,{pkg,<<"ssl_verify_hostname">>,<<"1.0.5">>},1}].
+ {<<"ssl_verify_fun">>,{pkg,<<"ssl_verify_fun">>,<<"1.1.0">>},1}].
