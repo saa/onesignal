@@ -26,8 +26,9 @@ create_player(Params) when is_map(Params) ->
 
 send_notification(ApiKey, Params) ->
     case request(post, <<"/notifications">>, ApiKey, Params) of
-        {ok, 200, _RespHeaders, _Ref} ->
-            ok;
+        {ok, 200, _RespHeaders, Ref} ->
+            {ok, JSON} = hackney:body(Ref),
+            {ok, jsx:decode(JSON, [return_maps])};
         {ok, StatusCode, _RespHeaders, Ref} ->
             {ok, ErrorBody} = hackney:body(Ref),
             {error, StatusCode, ErrorBody}
